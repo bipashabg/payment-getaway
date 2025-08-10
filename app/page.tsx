@@ -13,7 +13,7 @@ export default function LandingPage() {
     // Simulate Google OAuth flow - your teammate will implement actual auth
     setTimeout(() => {
       setIsSigningIn(false);
-      router.push('/home');
+      router.push('/transaction?address=0x61F98b58328191a8ed2EAFE1Ed017d379Ba39a4B&name=Sarah%20Wilson&mode=contact');
     }, 2000);
   };
 

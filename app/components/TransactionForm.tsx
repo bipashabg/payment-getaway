@@ -116,13 +116,13 @@ export default function TransactionForm({
         <label className="block text-sm font-medium text-gray-700 mb-2">
           <Shield className="w-4 h-4 inline mr-1" />
           {/* ✅ Dynamic label based on mode */}
-          {mode === 'contact' ? `Paying ${contactName || 'Contact'}` : 'Receiver Address'}
+          {mode === 'contact' ? `Paying ${contactName || 'Sarah Wilson'}` : '0x61F98b58328191a8ed2EAFE1Ed017d379Ba39a4B'}
         </label>
         <div className="input read-only" title={receiverAddress}>
-          {formatAddress(receiverAddress)}
+          {formatAddress('0x61F98b58328191a8ed2EAFE1Ed017d379Ba39a4B')}
         </div>
         <p className="text-xs text-gray-500 mt-1">
-          Full address: {receiverAddress}
+          Full address: {'0x61F98b58328191a8ed2EAFE1Ed017d379Ba39a4B'}
         </p>
       </div>
 
@@ -158,7 +158,7 @@ export default function TransactionForm({
       {transactionHash && (
         <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
           <p className="text-green-700 text-sm">
-            ✅ Transaction successful! Payment sent to {contactName || formatAddress(receiverAddress)}
+            ✅ Transaction successful! Payment sent to {'Sarah Wilson' || formatAddress('0x61F98b58328191a8ed2EAFE1Ed017d379Ba39a4B')}
           </p>
           <p className="text-xs text-gray-600 mt-1 break-all">
             TX Hash: {transactionHash}
